@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: auto;
+}
+.row{
+  margin: 3%;
+  float: left;
+  width: 23%;
+}
+.row::before,
+.row::after {
+  content: "";
+  display: table;
+}
+.row::after {
+  clear: both;
+}
+[class*="col-"]{
+  min-height: 7px;
+  padding: 12px;
+  float: left;
+}
+.col-1 {
+  width: 8.33333%;
+}
+.col-2 {
+  width: 16.66667%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 31.3%;
+}
+.col-5 {
+  width: 41.66667%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-8 {
+  width: 64.66667%;
+}
+.col-12 {
+  width: 98%;
+}
+.box {
+  height: 315px;
+}
+.gray-more {
+  background: #77787c;
+}
+.gray-less {
+  background: #dddddd;
+}
+.one{
+  height: 100px;
+  margin: 1%;
+}
+.two{
+  height: 200px;
+  margin: 1%;
+}
